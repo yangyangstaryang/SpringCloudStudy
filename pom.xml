@@ -27,6 +27,7 @@
         <module>borrow-service</module>
         <module>commons</module>
         <module>eureka-server</module>
+        <module>gateway-server</module>
     </modules>
     <scm>
         <connection/>
@@ -73,6 +74,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>2025.1.3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-gateway-dependencies</artifactId>
+                <version>5.0.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
